@@ -36,7 +36,7 @@ while userInput != "4":
 #     # This is the first option. This only checks what is in the account
 #
 #     '''
-    currentBalance = 0
+    currentBalance = int("0")
     if currentBalance == 0:
         option1quit = ""
 
@@ -55,12 +55,12 @@ while userInput != "4":
         withdrawlAmnt = 0
         if userInput == "3":
             print(f'User currently has ${newBalance}')
-            withdrawlAmnt = int(input("How much would you like to withdraw?- "))
+            withdrawlAmnt = int(input("How much would you like to deposit?"))
             if withdrawlAmnt != 0:
                 print(f'User now has ${newBalance-withdrawlAmnt} in their account.')
-
-            if withdrawlAmnt > newBalance:
-                print("Insufficient funds.")
+            elif withdrawlAmnt > newBalance:
+                print("Isufficient funds.")
+                print(newBalance)
 
 
 print("Have a good day!")
