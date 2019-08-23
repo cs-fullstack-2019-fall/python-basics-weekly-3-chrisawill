@@ -39,3 +39,6 @@ Before the program starts, ask the user for their account name and a pin number.
 
 
 # SERIOUSLY, POINTS WILL BE TAKEN OFF FOR NOT COMMENTING
+
+### Kenn's Comments
+You were close, but there are quite a few bugs in the program. I can't withdraw first, the balance is not persistant, and each time I add money it starts over.
