@@ -1,0 +1,18 @@
+SUDO CODE WEEK3
+
+Creating a bank account system that adds, takes away, and states how much money you have in your bank account.
+
+I first need to create a menu and the options. Here
+I will give the user the choice they need to navigate the banking system
+
+I need options to first see how much money the person has in their account, then the option to add and withdrawal. The last option will be to quit the program anytime the user wishes.
+
+The menu will be the main function, while each option branches out to another set of instructions for the user
+
+The first option will only state the current holdings of the users bank account,
+
+The second option will give the option to add money into the account. When the user selects this, then they will be sent to a input bar to enter the desired amount. Afterwards the input will ask if the amount is correct then exits.
+
+The third option is to withdraw. While this option is selected there will be an input bar to ask the user to put in the amount they would like to take from the account. Once in, there will be another input to confirm the decision. From there it will quit to the main menu
+
+The last option is a quit, and it will takethem out the system entirely  with a message and reference to his bank account.
