@@ -32,9 +32,11 @@ while userInput != "4":
 # '''
 # Adding the if conditionals fro the 3 options. Because the quit option is true statement it does not need one.
 # '''
-# This is the first option. This only checks what is in the account
+#     '''
+#     # This is the first option. This only checks what is in the account
+#
+#     '''
     currentBalance = 0
-
     if currentBalance == 0:
         option1quit = ""
 
@@ -44,20 +46,20 @@ while userInput != "4":
 
         if userInput == "2":
             print(f'User has ${currentBalance} in their account')
-            newBalance = int(input("How much would you like to deposit?- "))
-        newBalance = newBalance+currentBalance
+            moneyCount = int(input("How much would you like to deposit?- "))
+            newBalance = moneyCount+currentBalance
 
-        if newBalance != 0:
-            print(f'User now has ${newBalance} in their account.')
+            if newBalance != 0:
+                print(f'User now has ${newBalance} in their account.')
 
         withdrawlAmnt = 0
         if userInput == "3":
-            print(newBalance)
+            print(f'User currently has ${newBalance}')
             withdrawlAmnt = int(input("How much would you like to withdraw?- "))
             if withdrawlAmnt != 0:
-                print(f'User now has ${currentBalance - withdrawlAmnt} in their account.')
+                print(f'User now has ${newBalance-withdrawlAmnt} in their account.')
 
-            elif withdrawlAmnt > currentBalance:
+            if withdrawlAmnt > newBalance:
                 print("Insufficient funds.")
 
 
