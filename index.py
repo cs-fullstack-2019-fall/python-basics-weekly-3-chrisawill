@@ -43,7 +43,7 @@ while userInput != "4":
         if userInput == "1":
             print(f"User has ${currentBalance} in their account")
 
-
+# second option. depositing
         if userInput == "2":
             print(f'User has ${currentBalance} in their account')
             moneyCount = int(input("How much would you like to deposit?- "))
@@ -51,7 +51,7 @@ while userInput != "4":
 
             if newBalance != 0:
                 print(f'User now has ${newBalance} in their account.')
-
+#third option. withdrawing
         withdrawlAmnt = 0
         if userInput == "3":
             print(f'User currently has ${newBalance}')
@@ -62,5 +62,5 @@ while userInput != "4":
                 print("Isufficient funds.")
                 print(newBalance)
 
-
+#fourth option. this is the quit button. works troughout  the menues
 print("Have a good day!")
